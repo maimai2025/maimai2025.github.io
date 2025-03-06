@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脉脉(MaiMai)的个人网页</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fd;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #a1cfff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #76b9f7;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #76b9f7;
+            padding-bottom: 5px;
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        .wishlist {
+            background-color: #fff7cc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>脉脉（MaiMai | まいまい）的个人网页</h1>
+        <p class="quote">“自分を信じて前へ進め！”（相信自己向前进！）</p>
+    </header>
+
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#reading">阅读记录</a>
+        <a href="#languages">语言学习</a>
+        <a href="#daily">我的日常</a>
+        <a href="#football">足球训练</a>
+        <a href="#chatgpt">助手互动</a>
+        <a href="#wishlist">我的小愿望</a>
+    </nav>
+
+    <section id="about">
+        <h2>关于我</h2>
+        <p><strong>中文名：</strong>脉脉</p>
+        <p><strong>英文名：</strong>MaiMai</p>
+        <p><strong>日语名：</strong>まいまい</p>
+        <p><strong>生日：</strong>2006.05.29</p>
+        <p>喜欢推理小说、动漫、足球、排球、以及有关日本的一切！</p>
+    </section>
+
+    <section id="reading">
+        <h2>阅读记录</h2>
+        <ul>
+            <li><strong>本格派：</strong>《黑死馆杀人事件》</li>
+            <li><strong>社会派：</strong>（待更新）</li>
+            <li><strong>恐怖推理：</strong>《首无作祟之物》（三津田信三）</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>语言学习</h2>
+        <ul>
+            <li>英语 - 学习目标：日常交流、自学翻译</li>
+            <li>日语 - 学习目标：N1 水平、日常交流、翻译</li>
+            <li>西班牙语 - 学习目标：发音基础巩固，日常表达熟练</li>
+        </ul>
+    </section>
+
+    <section id="daily">
+        <h2>我的日常</h2>
+        <p>记录我的生活点滴，持续更新中……</p>
+    </section>
+
+    <section id="football">
+        <h2>足球训练</h2>
+        <p>目标：左右脚精准度一致、掌握盘带技巧、学习花式足球。</p>
+        <p>每周更新进度条，记录训练成果。</p>
+    </section>
+
+    <section id="assistant">
+        <h2>助手互动（ChatGPT）</h2>
+        <p>记录与助手一起完成的计划、任务和趣事。</p>
+    </section>
+
+    <section id="wishlist" class="wishlist">
+        <h2>我的小愿望</h2>
+        <ul>
+            <li>去长野县阿智村看星空</li>
+            <li>再去一次京都</li>
+            <li>观看喜欢的足球队比赛</li>
+            <li>提升独立生活能力</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 MaiMai's Personal Page | Created with Love by ChatGPT
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
